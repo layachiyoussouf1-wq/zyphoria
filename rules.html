@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyphoria - القوانين</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- حماية الصفحة -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("الرجاء تسجيل الدخول أولاً!");
+        window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo-header">
+    <h1>القوانين والشروط</h1>
+  </header>
+
+  <main>
+    <div class="rules-container">
+      <ol>
+        <li>يجب على المستخدم إكمال المهام بنفسه دون استخدام برامج غش.</li>
+        <li>لا يسمح بالتسجيل بأكثر من حساب واحد لكل مستخدم.</li>
+        <li>المستخدم مسؤول عن إدخال معلومات المحفظة الصحيحة للسحب.</li>
+        <li>جميع النقاط والمكافآت قابلة للتغيير وفق سياسات المنصة.</li>
+        <li>في حال اكتشاف أي مخالفات، يحق للمنصة تعطيل الحساب.</li>
+      </ol>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

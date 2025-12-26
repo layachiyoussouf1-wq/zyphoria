@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyphoria - المهام</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- حماية الصفحة -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("الرجاء تسجيل الدخول أولاً!");
+        window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo-header">
+    <h1>المهام المتاحة</h1>
+  </header>
+
+  <main>
+    <div class="tasks-list">
+      <div class="task">
+        <p>مهمة 1: مشاهدة فيديو قصير</p>
+        <button onclick="completeTask('مهمة 1', 5)">إكمال المهمة +5 نقاط</button>
+      </div>
+
+      <div class="task">
+        <p>مهمة 2: متابعة صفحة على وسائل التواصل</p>
+        <button onclick="completeTask('مهمة 2', 10)">إكمال المهمة +10 نقاط</button>
+      </div>
+
+      <div class="task">
+        <p>مهمة 3: تنزيل تطبيق معين</p>
+        <button onclick="completeTask('مهمة 3', 20)">إكمال المهمة +20 نقاط</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

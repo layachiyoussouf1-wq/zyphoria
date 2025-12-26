@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyphoria - السحب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- حماية الصفحة -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("الرجاء تسجيل الدخول أولاً!");
+        window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo-header">
+    <h1>سحب الأرباح</h1>
+  </header>
+
+  <main>
+    <div class="withdraw-container">
+      <p>رصيدك الحالي: <span id="balance">0 نقاط</span></p>
+
+      <input type="text" id="wallet" placeholder="عنوان محفظة USDT TRC20">
+      <input type="number" id="amount" placeholder="المبلغ المطلوب سحبه">
+
+      <button onclick="withdraw()">طلب السحب</button>
+      <p id="withdrawMsg"></p>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

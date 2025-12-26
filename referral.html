@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyphoria - الدعوات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- حماية الصفحة -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("الرجاء تسجيل الدخول أولاً!");
+        window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo-header">
+    <h1>نظام الدعوات</h1>
+  </header>
+
+  <main>
+    <div class="referral-container">
+      <p>رابط الدعوة الخاص بك:</p>
+      <input type="text" id="referralLink" value="https://zyphoria.com/?ref=USER123" readonly>
+      <button onclick="copyReferral()">نسخ الرابط</button>
+
+      <p>عدد الأشخاص الذين انضموا عن طريقك: <span id="referralsCount">0</span></p>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

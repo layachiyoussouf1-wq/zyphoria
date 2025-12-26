@@ -1,0 +1,251 @@
+/* =======================
+   إعدادات عامة للجسم
+======================= */
+body {
+  background: linear-gradient(135deg, #1e90ff, #6a5acd);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* =======================
+   Header - الشعار والعنوان
+======================= */
+header {
+  display: flex;
+  flex-direction: column; /* عمودي */
+  align-items: center; /* توسيط */
+  padding: 20px 0;
+  background: rgba(255,255,255,0.1);
+}
+
+header img.logo-header {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+/* =======================
+   صفحة تسجيل الدخول login
+======================= */
+.login-container {
+  background: white;
+  padding: 25px;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container .logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.login-container h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-container button {
+  background: #1e90ff;
+  border: none;
+  color: white;
+  width: 95%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #187bcd;
+}
+
+.login-container a {
+  display: block;
+  margin-top: 12px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+#msg {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+/* =======================
+   الحاويات العامة main
+======================= */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+/* =======================
+   لوحة التحكم dashboard
+======================= */
+.dashboard-info p {
+  font-size: 18px;
+  color: white;
+  margin: 8px 0;
+}
+
+.dashboard-buttons button {
+  margin: 6px 0;
+  padding: 12px 20px;
+  width: 200px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #1e90ff;
+  color: white;
+}
+
+.dashboard-buttons button:hover {
+  background: #187bcd;
+}
+
+/* =======================
+   المهام tasks
+======================= */
+.tasks-list {
+  width: 90%;
+  max-width: 400px;
+}
+
+.task {
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.task p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.task button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background: #187bcd;
+}
+
+/* =======================
+   السحب withdraw
+======================= */
+.withdraw-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.withdraw-container button {
+  padding: 12px 20px;
+  margin-top: 8px;
+  width: 95%;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.withdraw-container button:hover {
+  background: #187bcd;
+}
+
+#withdrawMsg {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+/* =======================
+   الدعوات referral
+======================= */
+.referral-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.referral-container button {
+  padding: 12px 20px;
+  margin-top: 8px;
+  width: 95%;
+  border: none;
+  border-radius: 8px;
+  background: #1e90ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.referral-container button:hover {
+  background: #187bcd;
+}
+
+/* =======================
+   القوانين rules
+======================= */
+.rules-container {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.rules-container ol {
+  padding-left: 20px;
+}

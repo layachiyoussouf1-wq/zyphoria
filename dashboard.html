@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyphoria - لوحة التحكم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- حماية الصفحة -->
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+        alert("الرجاء تسجيل الدخول أولاً!");
+        window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo-header">
+    <h1>مرحباً بك في لوحة تحكم Zyphoria</h1>
+  </header>
+
+  <main>
+    <div class="dashboard-info">
+      <p>رصيدك الحالي: <span id="balance">0 نقاط</span></p>
+      <p>عدد المهام: <span id="tasksCompleted">0</span></p>
+    </div>
+
+    <div class="dashboard-buttons">
+      <button onclick="window.location.href='tasks.html'">عرض المهام</button>
+      <button onclick="window.location.href='withdraw.html'">سحب الأرباح</button>
+      <button onclick="window.location.href='referral.html'">نظام الدعوات</button>
+      <button onclick="window.location.href='rules.html'">القوانين</button>
+      <button onclick="logout()">تسجيل الخروج</button>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
